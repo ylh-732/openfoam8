@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
     pisoControl piso(mesh);
 
     #include "createFields.H"
+    #include "source.H"                //Linghui
     #include "initContinuityErrs.H"
 
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
@@ -111,6 +112,8 @@ int main(int argc, char *argv[])
             U = HbyA - rAU*fvc::grad(p);
             U.correctBoundaryConditions();
         }
+
+        #include "cEqn.H"        //Linghui
 
         runTime.write();
 

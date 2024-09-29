@@ -19,6 +19,14 @@ dimensionedScalar nu
     transportProperties.lookup("nu")
 );
 
+// Linghui
+// Read constant Peclet number from file transportProperties
+dimensionedScalar Dc
+(
+    "Dc",
+    transportProperties.lookup("Dc")
+);
+
 Info<< "Reading field p\n" << endl;
 volScalarField p
 (
@@ -40,6 +48,22 @@ volVectorField U
     IOobject
     (
         "U",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+// Linghui
+// Construct concentration field
+Info<< "Reading field c\n" << endl;
+volScalarField c
+(
+    IOobject
+    (
+        "c",
         runTime.timeName(),
         mesh,
         IOobject::MUST_READ,

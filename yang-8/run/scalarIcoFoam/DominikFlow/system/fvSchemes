@@ -30,11 +30,13 @@ divSchemes
 {
     default         none;
     div(phi,U)      Gauss linear;
+    div(phi,c)      Gauss linearUpwind grad(c);        //Linghui
 }
 
 laplacianSchemes
 {
-    default         Gauss linear orthogonal;
+    default           Gauss linear orthogonal;
+    laplacian(Dc,c)   Gauss linear corrected;         //Linghui
 }
 
 interpolationSchemes

@@ -5,17 +5,20 @@
     \\  /    A nd           | Version:  8
      \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
+// Linghui
+
 FoamFile
 {
     version     2.0;
     format      ascii;
     class       dictionary;
     location    "constant";
-    object      transportProperties;
+    object      sourceProperties;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-nu              [0 2 -1 0 0 0 0] 0.01;
-
+x_source             x_source [0 1 0 0 0 0 0] 2.25;
+y_source             y_source [0 1 0 0 0 0 0] 9.0;
+sigma_source         sigma_source [0 0 0 0 0 0 0] 0.2;
 
 // ************************************************************************* //
