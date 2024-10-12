@@ -21,7 +21,7 @@ seedSampleSet
     axis            x;
 }
 
-fields          (p k U);
+fields          (p U);
 
 #includeEtc "caseDicts/postProcessing/visualization/streamlines.cfg"
 

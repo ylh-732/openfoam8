@@ -5,47 +5,20 @@
     \\  /    A nd           | Version:  8
      \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
+// Linghui
+
 FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volScalarField;
-    location    "0";
-    object      nut;
+    class       dictionary;
+    location    "constant";
+    object      sourceProperties;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 2 -1 0 0 0 0];
-
-internalField   uniform 0;
-
-boundaryField
-{
-    inlet
-    {
-        type            calculated;
-        value           uniform 0;
-    }
-    outlet
-    {
-        type            calculated;
-        value           uniform 0;
-    }
-    upperWall
-    {
-        type            nutkWallFunction;
-        value           uniform 0;
-    }
-    lowerWall
-    {
-        type            nutkWallFunction;
-        value           uniform 0;
-    }
-    frontAndBack
-    {
-        type            empty;
-    }
-}
-
+x_source             x_source [0 1 0 0 0 0 0] 2.25;
+y_source             y_source [0 1 0 0 0 0 0] 9.0;
+sigma_source         sigma_source [0 0 0 0 0 0 0] 0.2;
 
 // ************************************************************************* //

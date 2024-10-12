@@ -31,12 +31,7 @@ boundaryField
         value           uniform 0;
     }
 
-    upperWall
-    {
-        type            zeroGradient;
-    }
-
-    lowerWall
+    fixedWalls
     {
         type            zeroGradient;
     }
@@ -45,6 +40,6 @@ boundaryField
     {
         type            empty;
     }
-}
+} 
 
 // ************************************************************************* //
