@@ -30,7 +30,8 @@ divSchemes
 {
     default         none;
     div(phi,U)      Gauss linear;
-    div(phi,c)      Gauss linearUpwind grad(c);        //Linghui
+    div(phi,c)      bounded Gauss upwind;        
+    div(-phi,c)     bounded Gauss upwind;         //Linghui
 }
 
 laplacianSchemes

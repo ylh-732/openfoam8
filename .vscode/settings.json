@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "scalarSimpleFoam.C": "cpp"
+        "scalarSimpleFoam.C": "cpp",
+        "scalarIcoFoam.C": "cpp"
     }
 }

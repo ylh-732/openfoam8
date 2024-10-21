@@ -5,14 +5,14 @@
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-fvScalarMatrix cEqn
+fvScalarMatrix caEqn
 (
   fvm::ddt(c)
-  - fvm::div(phi, c)
+  + fvm::div(-phi, c)
   - fvm::laplacian(Dc, c)
  == source
 );
-cEqn.relax();
-cEqn.solve();
+caEqn.relax();
+caEqn.solve();
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

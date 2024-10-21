@@ -113,7 +113,7 @@ int main(int argc, char *argv[])
             U.correctBoundaryConditions();
         }
 
-        #include "cEqn.H"        //Linghui
+        #include "caEqn.H"        //Linghui
 
         runTime.write();
 
