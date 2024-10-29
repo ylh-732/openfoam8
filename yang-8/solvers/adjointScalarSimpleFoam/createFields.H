@@ -64,6 +64,21 @@ volScalarField c
     mesh
 );
 
+// Construct adjoint concentration field
+Info<< "Reading field ca\n" << endl;
+volScalarField ca
+(
+    IOobject
+    (
+        "ca",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
 #include "createPhi.H"
 
 

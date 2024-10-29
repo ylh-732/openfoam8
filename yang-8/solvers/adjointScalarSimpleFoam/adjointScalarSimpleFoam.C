@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
     #include "createMesh.H"
     #include "createControl.H"
     #include "createFields.H"
-    #include "source.H"                //Linghui
+    #include "source_multiple.H"                //Linghui
     #include "initContinuityErrs.H"
 
     turbulence->validate();

@@ -7,9 +7,9 @@
 
 fvScalarMatrix caEqn
 (
-  fvm::ddt(c)
-  + fvm::div(-phi, c)
-  - fvm::laplacian(Dc, c)
+  fvm::ddt(ca)
+  + fvm::div(-phi, ca)
+  - fvm::laplacian(Dc, ca)
  == source
 );
 caEqn.relax();

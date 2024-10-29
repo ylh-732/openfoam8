@@ -41,6 +41,14 @@ solvers
         tolerance       1e-6;
         relTol          0.05;
     }
+
+    ca
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       1e-6;
+        relTol          0.05;
+    }
 }
 
 SIMPLE
