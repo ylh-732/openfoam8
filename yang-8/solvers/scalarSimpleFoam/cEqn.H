@@ -7,7 +7,7 @@
 
 fvScalarMatrix cEqn
 (
-    fvm::ddt(c)
+  fvm::ddt(c)
   + fvm::div(phi, c)
   - fvm::laplacian(Dc, c)
  == source

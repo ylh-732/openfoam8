@@ -47,7 +47,8 @@ int main(int argc, char *argv[])
     #include "createMesh.H"
     #include "createControl.H"
     #include "createFields.H"
-    #include "source_multiple.H"                //Linghui
+    #include "read_sensor_location.H"
+    #include "create_source_forward_and_adjoint.H"                                               // Linghui                
     #include "initContinuityErrs.H"
 
     turbulence->validate();
@@ -69,7 +70,12 @@ int main(int argc, char *argv[])
         laminarTransport.correct();
         turbulence->correct();
 
-        #include "caEqn.H"        //Linghui
+        #include "cEqn.H"
+        #include "update_source_adjoint.H"
+        #include "output_loss.H"
+        #include "caEqn.H"        
+        #include "update_source_forward.H"     // Linghui
+        
 
         runTime.write();
 

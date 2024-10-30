@@ -69,7 +69,7 @@ int main(int argc, char *argv[])
         laminarTransport.correct();
         turbulence->correct();
 
-        #include "caEqn.H"        //Linghui
+        #include "cEqn.H"        //Linghui
 
         runTime.write();
 

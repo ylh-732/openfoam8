@@ -79,6 +79,21 @@ volScalarField ca
     mesh
 );
 
+// Construct measurements field
+Info<< "Reading field measurements\n" << endl;
+volScalarField measurements
+(
+    IOobject
+    (
+        "measurements",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::NO_WRITE
+    ),
+    mesh
+);
+
 #include "createPhi.H"
 
 
