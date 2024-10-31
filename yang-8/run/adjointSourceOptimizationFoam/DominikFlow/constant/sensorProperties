@@ -5,7 +5,6 @@
     \\  /    A nd           | Version:  8
      \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
-// Linghui
 
 FoamFile
 {
@@ -16,6 +15,9 @@ FoamFile
     object      sensorProperties;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+alpha                   alpha [0 0 0 0 0 0 0] 0.001;        // Learning rate
+end_time                end_time [0 0 0 0 0 0 0] 100;
 
 x_sensor_1              x_sensor_1 [0 1 0 0 0 0 0] 3.6;
 x_sensor_2              x_sensor_2 [0 1 0 0 0 0 0] 7.2;

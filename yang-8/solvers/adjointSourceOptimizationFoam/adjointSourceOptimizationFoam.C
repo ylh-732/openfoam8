@@ -61,15 +61,8 @@ int main(int argc, char *argv[])
     {
         Info<< "Time = " << runTime.timeName() << nl << endl;
 
-        // --- Pressure-velocity SIMPLE corrector
-        {
-            #include "UEqn.H"
-            #include "pEqn.H"
-        }
-
-        laminarTransport.correct();
-        turbulence->correct();
-
+        int stop = int(end_time.value());
+        
         #include "cEqn.H"
         #include "update_source_adjoint.H"
         #include "output_loss.H"

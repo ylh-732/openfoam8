@@ -1,4 +1,4 @@
 forAll(source_forward, i)
 {
-    source_forward[i] = source_forward[i] - 0.01 * ca[i];
+    source_forward[i] = source_forward[i] - alpha.value() * ca[i];
 }

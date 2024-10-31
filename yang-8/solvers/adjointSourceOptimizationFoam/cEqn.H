@@ -1,4 +1,9 @@
-for(int i = 0; i < 1; i++) 
+forAll(c, i)
+{
+    c[i] = 0;
+}
+
+for(int i = 0; i < stop; i++) 
 {
     fvScalarMatrix cEqn
     (
