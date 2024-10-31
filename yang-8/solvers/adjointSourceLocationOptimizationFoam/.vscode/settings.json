@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "adjointSourceOptimizationFoam.C": "cpp",
-        "scalarSimpleFoam.C": "cpp"
+        "scalarSimpleFoam.C": "cpp",
+        "adjointSourceLocationOptimizationFoam.C": "cpp"
     }
 }
