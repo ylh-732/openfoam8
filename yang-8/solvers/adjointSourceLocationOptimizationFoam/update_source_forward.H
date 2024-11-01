@@ -5,9 +5,10 @@ Foam::label cell_source = mesh.findCell(p_source);
 
 scalar grad_x = gradca[cell_source].component(0);
 scalar grad_y = gradca[cell_source].component(1);
+// scalar grad_mag = sqrt(sqr(grad_x) + sqr(grad_y));
 
-x_source = x_source - 0.2 * grad_x;
-y_source = y_source - 0.2 * grad_y;
+x_source = x_source - alpha.value() * grad_x;
+y_source = y_source - alpha.value() * grad_y;
 
 forAll(source_forward, i)
 {

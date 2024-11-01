@@ -11,6 +11,15 @@ IOdictionary sensorProperties
     )
 );
 
+dimensionedScalar alpha
+(
+    sensorProperties.lookup("alpha")
+);
+dimensionedScalar end_time
+(
+    sensorProperties.lookup("end_time")
+);
+
 dimensionedScalar x_source
 (
     sensorProperties.lookup("x_source")
