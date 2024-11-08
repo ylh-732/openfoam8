@@ -34,7 +34,7 @@ solvers
     }
     
     // Linghui
-    c
+    ca
     {
         solver          smoothSolver;
         smoother        symGaussSeidel;
@@ -42,7 +42,7 @@ solvers
         relTol          0.05;
     }
 
-    ca
+    theta
     {
         solver          smoothSolver;
         smoother        symGaussSeidel;

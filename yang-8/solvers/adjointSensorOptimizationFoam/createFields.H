@@ -49,21 +49,6 @@ volVectorField U
 );
 
 // Linghui
-// Construct concentration field
-Info<< "Reading field c\n" << endl;
-volScalarField c
-(
-    IOobject
-    (
-        "c",
-        runTime.timeName(),
-        mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
-    ),
-    mesh
-);
-
 // Construct adjoint concentration field
 Info<< "Reading field ca\n" << endl;
 volScalarField ca
@@ -79,17 +64,17 @@ volScalarField ca
     mesh
 );
 
-// Construct measurements field
-Info<< "Reading field measurements\n" << endl;
-volScalarField measurements
+// Construct adjoint of adjoint concentration field
+Info<< "Reading field theta\n" << endl;
+volScalarField theta
 (
     IOobject
     (
-        "measurements",
+        "theta",
         runTime.timeName(),
         mesh,
         IOobject::MUST_READ,
-        IOobject::NO_WRITE
+        IOobject::AUTO_WRITE
     ),
     mesh
 );

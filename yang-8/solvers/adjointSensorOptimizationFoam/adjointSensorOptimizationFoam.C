@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
     #include "createControl.H"
     #include "createFields.H"
     #include "read_sensor_location.H"
-    #include "create_source_forward_and_adjoint.H"                                               // Linghui                
+    #include "create_source.H"             // Linghui              
     #include "initContinuityErrs.H"
 
     turbulence->validate();
@@ -56,6 +56,10 @@ int main(int argc, char *argv[])
     // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
     Info<< "\nStarting time loop\n" << endl;
+    
+    // Initialization
+    #include "calculate_source_adjoint.H"
+    #include "empty_txt_content.H"
 
     while (simple.loop(runTime))
     {
@@ -63,11 +67,13 @@ int main(int argc, char *argv[])
 
         int stop = int(end_time.value());
 
-        #include "cEqn.H"
-        #include "update_source_adjoint.H"
+        #include "output_sensor.H"
+        #include "caEqn.H"
+        #include "update_source_adjoint_adjoint.H"
         #include "output_loss.H"
-        #include "caEqn.H"        
-        #include "update_source_forward.H"     // Linghui
+        #include "thetaEqn.H"
+        #include "update_sensor_location.H"
+        #include "calculate_source_adjoint.H"     // Linghui
         
         runTime.write();
 

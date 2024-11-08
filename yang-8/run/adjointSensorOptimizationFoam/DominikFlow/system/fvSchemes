@@ -29,7 +29,7 @@ divSchemes
 {
     default         none;
     div(phi,U)      bounded Gauss linearUpwind grad(U);
-    div(phi,c)      bounded Gauss upwind;        
+    div(phi,theta)  bounded Gauss upwind;        
     div(-phi,ca)    bounded Gauss upwind;         //Linghui
     
     div(phi,k)      bounded Gauss limitedLinear 1;
