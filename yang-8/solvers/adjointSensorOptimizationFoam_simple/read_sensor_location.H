@@ -20,15 +20,6 @@ dimensionedScalar end_time
     sensorProperties.lookup("end_time")
 );
 
-dimensionedScalar x_source
-(
-    sensorProperties.lookup("x_source")
-);
-dimensionedScalar y_source
-(
-    sensorProperties.lookup("y_source")
-);
-
 dimensionedScalar x_sensor_1
 (
     sensorProperties.lookup("x_sensor_1")
