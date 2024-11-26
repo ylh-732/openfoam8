@@ -15,6 +15,10 @@ dimensionedScalar alpha
 (
     sensorProperties.lookup("alpha")
 );
+dimensionedScalar beta
+(
+    sensorProperties.lookup("beta")
+);
 dimensionedScalar end_time
 (
     sensorProperties.lookup("end_time")

@@ -15,7 +15,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     adjointScalarSimpleFoam;
+application     adjointSensorOptimizationFoam;
 
 startFrom       startTime;
 
