@@ -1,0 +1,52 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+// Linghui
+
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      sourceProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+x_source_1              x_source_1 [0 1 0 0 0 0 0] 3.23;
+x_source_2              x_source_2 [0 1 0 0 0 0 0] 11.76;
+x_source_3              x_source_3 [0 1 0 0 0 0 0] 9.92;
+x_source_4              x_source_4 [0 1 0 0 0 0 0] 17.75;
+
+y_source_1              y_source_1 [0 1 0 0 0 0 0] 2.20;
+y_source_2              y_source_2 [0 1 0 0 0 0 0] 0.84;
+y_source_3              y_source_3 [0 1 0 0 0 0 0] 3.02;
+y_source_4              y_source_4 [0 1 0 0 0 0 0] 1.37;
+
+x_source_5              x_source_5 [0 1 0 0 0 0 0] 3.44;
+x_source_6              x_source_6 [0 1 0 0 0 0 0] 6.98;
+x_source_7              x_source_7 [0 1 0 0 0 0 0] 15.85;
+x_source_8              x_source_8 [0 1 0 0 0 0 0] 17.65;
+
+y_source_5              y_source_5 [0 1 0 0 0 0 0] 7.08;
+y_source_6              y_source_6 [0 1 0 0 0 0 0] 5.81;
+y_source_7              y_source_7 [0 1 0 0 0 0 0] 5.54;
+y_source_8              y_source_8 [0 1 0 0 0 0 0] 3.71;
+
+x_source_9              x_source_9 [0 1 0 0 0 0 0] 4.84;
+x_source_10             x_source_10 [0 1 0 0 0 0 0] 11.76;
+x_source_11             x_source_11 [0 1 0 0 0 0 0] 14.12;
+x_source_12             x_source_12 [0 1 0 0 0 0 0] 15.66;
+
+y_source_9              y_source_9 [0 1 0 0 0 0 0] 9.26;
+y_source_10             y_source_10 [0 1 0 0 0 0 0] 7.32;
+y_source_11             y_source_11 [0 1 0 0 0 0 0] 8.60;
+y_source_12             y_source_12 [0 1 0 0 0 0 0] 8.59;
+
+sigma_source            sigma_source [0 0 0 0 0 0 0] 0.1;
+
+// ************************************************************************* //
