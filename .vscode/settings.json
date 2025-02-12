@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "scalarSimpleFoam.C": "cpp",
-        "scalarIcoFoam.C": "cpp",
-        "adjointScalarSimpleFoam.C": "cpp"
-    }
-}
