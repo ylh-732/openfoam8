@@ -1,6 +1,6 @@
 from paraview.simple import *
 
-path_input = '/Users/linghuiyang/Documents/1_phd/5_cgan_data/flow-2-3'
+path_input = '/Users/linghuiyang/Documents/1_phd/5_cgan_data/flow-5-1'
 path_output = path_input + '/csv'
 
 spreadSheetView = CreateView('SpreadSheetView')
@@ -9,7 +9,7 @@ spreadSheetView.BlockSize = 1024
 layout = GetLayoutByName("Layout")
 AssignViewToLayout(view=spreadSheetView, layout=layout, hint=0)
 
-for i in range(3, 36):
+for i in range(1, 36):
     for j in range(1, 24):
         case_name = f'case-{i}-{j}'
         file_input = f'{path_input}/{case_name}/results.foam'
