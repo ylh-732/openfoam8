@@ -1,5 +1,5 @@
 #!/bin/bash
-#BSUB -J initialize velocity
+#BSUB -J init velocity
 #BSUB -o output
 #BSUB -e error
 
